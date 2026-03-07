@@ -112,29 +112,22 @@
         guestName = capitalizeWords(guestName);
         const paramsUrl = `${BASE_URL}/?name=${encodeURIComponent(guestName)}`;
 
-        getElement("invitationText").value = `Kepada Yth.
-Bapak/Ibu/Saudara/i
-*${guestName}*
+        getElement("invitationText").value = `Dear *${guestName}*
 
-_Assalamualaikum warahmatullahi wabarakatuh_
+With great joy, we invite you to celebrate the wedding of
 
-Dengan penuh rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami:
+*Raisa Mahani* 
+and
+*Rafi Alwi*
 
-*Raisa Mahani Bin Syekh Abubakar* 
-Putri dari Bapak Abubakar (Arbin) bin Jafar Bin Syekh Abubakar dan  Ibu Dina Sukainah binti Muhammad Bin Syekh Abubakar
-
-*Mirza Ahmad Rafi Alwi Bin Syekh Abubakar*
-Putra dari Bapak Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar dan Ibu Mylantha Kamarullah binti Syarief Muhammad Alhabsyi
-
-Untuk informasi lengkap mengenai waktu dan lokasi acara, silakan klik tautan berikut:
+For the full details of our wedding celebration, please kindly visit the link below:
 
 ${paramsUrl}
 
-Merupakan kebahagiaan dan kehormatan bagi kami apabila Bapak/Ibu/Saudara/i *${guestName}* berkenan hadir serta memberikan doa restu bagi kami berdua.
+Your presence and blessings on our special day would mean so much to us.
 
-Mohon maaf karena undangan ini kami sampaikan melalui pesan singkat.
-
-_Wassalamualaikum warahmatullahi wabarakatuh_`;
+Warm regards,
+Raisa & Rafi`;
       }
 
       async function copyInvitation() {
